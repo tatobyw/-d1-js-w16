@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML: DOM</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body bgcolor="#FEF1E6">
+        <h1 style="color: #2f7add;">ES6: Document Oject Model</h1>
+        <hr color="red"> 
+        <h2 id="demo"></h2>
+        <p id="demo2"></p>
+        <span id="demo3"></span>
+        <script>
+            document.getElementById("demo").innerHTML = "Hello"; //method
+            var myElement = document.getElementById("demo2").innerHTML = "World";
+            var text = "Mark";
+            var myElement2 = document.getElementById("demo3").innerHTML = text;
+            var myElement3 = document.getElementsByTagName("p");
+            console.log(myElement);
+            console.log(myElement2);
+            console.log(myElement3);
+        </script>
+    </body>
+</html>
